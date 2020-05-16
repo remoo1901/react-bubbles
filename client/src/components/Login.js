@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axiosWithAuth from "../util/axiosWithAuth";
- 
 
 const Login = (props) => {
   const [cred, setCred] = useState({
@@ -17,7 +16,7 @@ const Login = (props) => {
       },
     });
   };
-// make a post request to retrieve a token from the api
+  // make a post request to retrieve a token from the api
   // when you have handled the token, navigate to the BubblePage route
   const login = (e) => {
     e.preventDefault();
@@ -32,11 +31,9 @@ const Login = (props) => {
       });
   };
 
-  
   return (
     <div>
       <h1>Welcome to the Bubble App!</h1>
-      <p>Build a login page here</p>
 
       <form onSubmit={(e) => login(e)}>
         <input
@@ -55,7 +52,6 @@ const Login = (props) => {
         />
         <button type="submit">Submit</button>
       </form>
-      
     </div>
   );
 };
