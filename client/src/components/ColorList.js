@@ -29,7 +29,7 @@ const ColorList = ({ colors, updateColors }) => {
       .then((res) => {
         console.log(res.data);
         setEditing(false);
-        push(`/bubblePage`);
+        push(`/protected`);
       })
       .catch((err) => console.log("ERROR", err));
   };
