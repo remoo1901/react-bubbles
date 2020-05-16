@@ -18,8 +18,8 @@ function App() {
       <button onClick={logOut}>LogOut</button>
       <div className="App">
         
-        <Route exact path="/" component={Login} />
-        <PrivateRoute exact path="/protected" component={BubblePage} />
+        <Route exact path="/" component={Login} />    
+        <PrivateRoute exact path="/bubble-page" component={BubblePage} />
       </div>
     </Router>
   );

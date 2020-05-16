@@ -24,7 +24,7 @@ const Login = (props) => {
       .post("/login", cred.credentials)
       .then((res) => {
         localStorage.setItem("token", res.data.payload);
-        props.history.push("/protected");
+        props.history.push("/bubble-page");
       })
       .catch((err) => {
         console.log("ERROR", err);
